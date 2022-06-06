@@ -1,8 +1,11 @@
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:users_app/widgets/category_card.dart';
+import 'package:users_app/widgets/services_card.dart';
 import 'package:users_app/widgets/therapy_card.dart';
 import 'package:users_app/widgets/utils.dart';
 
@@ -20,7 +23,8 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Padding(padding: EdgeInsets.only(left: 100,right: 20),
+                Padding(
+                  padding: EdgeInsets.only(left: 100,right: 20),
                   child: Lottie.network('https://assets8.lottiefiles.com/packages/lf20_eqCI4X.json',
                   width: 170,height: 170,
                   fit: BoxFit.fill),
@@ -89,6 +93,7 @@ class HomeScreen extends StatelessWidget {
             'Hizmetler',
             Icons.medical_services_outlined,
             Color(0xff8946A6),
+
           ),
           SizedBox(
             width: 10,
@@ -119,17 +124,17 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         children: [
           TherapyCard(
-            "Tedavi Paketi 1",
-            "Muayene , PCR Test",
-            "images/doctor3.png",
+            "Check-Up Hizmeti",
+            "4 Çeşit Check-Up Paketi",
+            "images/doctor7.png",
             Colors.pink[50],
           ),
 
           SizedBox(height: 20,),
 
           TherapyCard(
-            "Tedavi Paketi 1",
-            "Muayene , PCR Test",
+            "Hemşire Desteği",
+            "Bir çok hizmeti evinizden çıkmadan alabilirsiniz.",
             "images/doctor3.png",
             Colors.deepPurple[50],
           ),
@@ -137,9 +142,18 @@ class HomeScreen extends StatelessWidget {
           SizedBox(height: 20,),
 
           TherapyCard(
-            "Tedavi Paketi 1",
-            "Muayene , PCR Test",
-            "images/doctor3.png",
+            "Evde Görüntüleme Hizmetleri",
+            "Evde kolaylıkla tetkikleri yapabilirsiniz.",
+            "images/doctor8.jpeg",
+            Colors.yellow[50],
+          ),
+
+          SizedBox(height: 20,),
+
+          TherapyCard(
+            "Covid-19 Testleri",
+            "Muayene , PCR test.",
+            "images/logo2.jpeg",
             Colors.yellow[50],
           ),
 

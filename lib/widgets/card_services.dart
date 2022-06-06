@@ -9,12 +9,14 @@ class ServicesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(itemCount: services.length,
+    return ListView.builder(
+      itemCount: services.length,
     itemBuilder: (context,index){
       final service =services[index];
       return ListTile(
         leading: Image.network(service.image),
         title: Text(service.title),
+        onTap: (){},
       );
     },);
   }

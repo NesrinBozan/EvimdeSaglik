@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:users_app/assistants/assistant_methods.dart';
+import 'package:users_app/global/global.dart';
 import 'package:users_app/screens/onboarding_screen.dart';
 
 
@@ -17,8 +18,10 @@ class MySplashScreen extends StatefulWidget {
 class _MySplashScreenState extends State<MySplashScreen> {
 
   startTimer(){
-    AssistantMethods.readCurrentOnlineUserInfo();
-    Timer( const Duration(seconds:1),() async{
+
+    fAuth.currentUser != null?  AssistantMethods.readCurrentOnlineUserInfo() : null;
+
+    Timer( const Duration(seconds:2),() async{
 
       Navigator.push(context, MaterialPageRoute(builder: (c)=> OnboardingScreen()));
 

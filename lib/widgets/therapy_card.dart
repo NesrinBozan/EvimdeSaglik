@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:users_app/screens/detail_screen.dart';
+import 'package:users_app/screens/checkUp_detail.dart';
+import 'package:users_app/screens/nurse_detail.dart';
 import 'package:users_app/widgets/utils.dart';
 class TherapyCard extends StatelessWidget {
   var _name;
@@ -12,8 +14,12 @@ class TherapyCard extends StatelessWidget {
     return InkWell(
      onTap: ()
      {
-      // Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => CheckUp_Detail()));
      },
+      onDoubleTap: (){
+       Navigator.push(context, MaterialPageRoute(builder: (context) => NurseDetail()));
+      },
+
       child: DecoratedBox(
           decoration: BoxDecoration(
             color:_bgColor,

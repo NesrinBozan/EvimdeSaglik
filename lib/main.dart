@@ -3,8 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:users_app/authentication/login_screen.dart';
 import 'package:users_app/infoHandler/app_info.dart';
+import 'package:users_app/mainScreens/main_screen.dart';
 import 'package:users_app/models/home_page_state.dart';
+import 'package:users_app/screens/covid19_detail.dart';
+import 'package:users_app/screens/detail_screen.dart';
+import 'package:users_app/screens/nurse_detail.dart';
+import 'package:users_app/screens/profile_screen.dart';
 import 'package:users_app/screens/splash_screen.dart';
+import 'package:users_app/screens/checkUp_detail.dart';
+import 'package:users_app/screens/branch_screen.dart';
 
 
 
@@ -21,9 +28,12 @@ void main() async {
 
                primarySwatch: Colors.blue,
              ),
-             home:LoginScreen(),
-             //MySplashScreen(), //
-//HomePageState
+             home:
+             //MainScreen(),
+             //LoginScreen(),
+             //   MySplashScreen(), //
+           // HomePageState(),
+             DetailScreen(),
              debugShowCheckedModeBanner: false,
            ),
          )

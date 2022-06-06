@@ -7,7 +7,10 @@ class CategoryCard extends StatelessWidget {
   var _imageUrl;
   var _bgColor;
 
-  CategoryCard(this._title, this._imageUrl, this._bgColor);
+
+
+
+  CategoryCard(this._title, this._imageUrl, this._bgColor,);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +18,11 @@ class CategoryCard extends StatelessWidget {
       onTap: ()
       {
         Navigator.push(context, MaterialPageRoute(builder: (context) => ServicesCard()));
+
+
+      },
+      onDoubleTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => DetailScreen ()));
       },
       child: Container(
         width: 120,
