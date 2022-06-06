@@ -1,16 +1,15 @@
-# users_app
+### Uygulamanın Amacı
+Hastaneye gitme şansı olmayan veya gitmek istemeyen, yatağa bağımlı olan veya hareket kısıtlaması bulunan, tanı ve tedavisini evde veya iş yerinde almak isteyen insanlar için sağlık hizmetini kapısına çağırabilme imkanının sağlanması.
+### Uygulamanın İçeriği
+Uygulama temelde iki tür kullanıcı için ayrı ayrı gerçekleştirilecektir. Birincisi, sağlık hizmetini gerçekleşmesini sağlayacak kuruluşun aracı için bir uygulama ikincisi de sağlık hizmetinden yararlanacak olan kullanıcılar için bir uygulama yapılacaktır.Uygulamada kullanıcı mevcut konumuna istediği sağlık hizmetini seçerek sağlık kuruluşuna bir çağrı oluşturup, harita üzerinden oluşturulan çağrı sonucu kullanıcı gelecek olan sağlık çalışanlarını anlık olarak takip edebildiği bir uygulama olması amaçlanmıştır. Uygulama içerisinde yapılacak olan sağlık hizmetleri ile ilgili detaylı bilgi içerecektir. 
+### DriverApp
 
-A new Flutter application.
+[![image](https://r.resimlink.com/w-7a14_QB8s.png)](https://resimlink.com/w-7a14_QB8s)
 
-## Getting Started
+### UserApp
 
-This project is a starting point for a Flutter application.
+[![image](https://r.resimlink.com/khmzT0.png)](https://resimlink.com/khmzT0)
 
-A few resources to get you started if this is your first Flutter project:
+[![image](https://r.resimlink.com/WDVYRciO2Xf.png)](https://resimlink.com/WDVYRciO2Xf)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![image](https://r.resimlink.com/Ivx7l_gaH.png)](https://resimlink.com/Ivx7l_gaH)
