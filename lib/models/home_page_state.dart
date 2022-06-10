@@ -23,7 +23,7 @@ class _HomePageStateState extends State<HomePageState> {
     final items= <Widget>[
 
       Icon(Icons.home,size: 30),
-      Icon(Icons.health_and_safety_sharp,size: 30),
+      Icon(Icons.medical_services_outlined,size: 30),
       Icon(Icons.person,size: 30),
     ];
 

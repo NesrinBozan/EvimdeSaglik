@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -26,7 +27,7 @@ class _EndOfRideDialogState extends State<EndOfRideDialog>
         margin: const EdgeInsets.all(6),
         width: double.infinity,
         decoration: BoxDecoration(
-          color: Colors.black87,
+          color: Colors.white,
           borderRadius: BorderRadius.circular(6),
         ),
         child: Column(
@@ -36,10 +37,10 @@ class _EndOfRideDialogState extends State<EndOfRideDialog>
             const SizedBox(height: 20,),
 
             Text(
-              "Sağlık ÇA.".toUpperCase(),
+              "Geçmiş Olsun".toUpperCase(),
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
-                color: Colors.grey,
+                color: Color(0xff8946A6),
                 fontSize: 16,
               ),
             ),
@@ -52,25 +53,31 @@ class _EndOfRideDialogState extends State<EndOfRideDialog>
             ),
 
             const SizedBox(height: 16,),
+            Icon(Icons.medical_services_outlined,color: Colors.lightGreen,
+            size: 75,
+            ),
 
-            Text(
+
+            /*Text(
              "",
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.grey,
                 fontSize: 50,
               ),
-            ),
+            ),*/
 
             const SizedBox(height: 10,),
 
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                "This is the total trip fare amount, Please Pay it to the driver.",
+                "Sağlığınızı ayağınıza getiriyoruz. Bizi tercih ettiğiniz için teşekkür ederiz.",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.grey,
+                  color: Color(0xff8946A6),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14
                 ),
               ),
             ),
@@ -81,7 +88,7 @@ class _EndOfRideDialogState extends State<EndOfRideDialog>
               padding: const EdgeInsets.all(18.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
+                  primary: Colors.lightGreen,
                 ),
                 onPressed: ()
                 {
@@ -91,24 +98,25 @@ class _EndOfRideDialogState extends State<EndOfRideDialog>
                   });
                 },
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "Pay Cash",
+                      "Sağlıklı Günler",
+
                       style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(
+           /* Text(
                       "",
                       style: const TextStyle(
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
+                    ),*/
                   ],
                 ),
               ),

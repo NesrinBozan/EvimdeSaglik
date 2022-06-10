@@ -13,9 +13,9 @@ class AppInfo extends ChangeNotifier
     userPickUpLocation = userPickUpAddress;
     notifyListeners();
   }
-  void updateDropOffLocationAddress(Directions DropOffAddress)
+  void updateDropOffLocationAddress(Directions dropOffAddress)
   {
-    userDropOffLocation = DropOffAddress;
+    userDropOffLocation = dropOffAddress;
     notifyListeners();
   }
 }

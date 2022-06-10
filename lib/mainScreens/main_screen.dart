@@ -333,6 +333,7 @@ class _MainScreenState extends State<MainScreen> {
 
           LatLng driverCurrentPositionLatLng = LatLng(driverCurrentPositionLat,driverCurrentPositionLng);
 
+
           if(userRideRequestStatus == "ended")
             {
               var response = showDialog(
@@ -541,6 +542,7 @@ class _MainScreenState extends State<MainScreen> {
             zoomGesturesEnabled: true,
             zoomControlsEnabled: true,
             initialCameraPosition: _kGooglePlex,
+            markers: markersSet,
             onMapCreated: (GoogleMapController controller) {
               _controllerGoogleMap.complete(controller);
               newGoogleMapController = controller;
@@ -847,6 +849,7 @@ class _MainScreenState extends State<MainScreen> {
         //whenever any driver become non-active/online
           case Geofire.onKeyExited:
             GeoFireAssistant.deleteOfflineDriverFromList(map['key']);
+            displayActiveDriversOnUserMap();
             break;
         // whenever driver moves-update driver location
           case Geofire.onKeyMoved:
@@ -861,6 +864,7 @@ class _MainScreenState extends State<MainScreen> {
 
         //display thosde online / active drivers on user's map
           case Geofire.onGeoQueryReady:
+            activeNearbyDriverKeysLoaded = true;
             displayActiveDriversOnUserMap();
             break;
         }
@@ -882,7 +886,7 @@ class _MainScreenState extends State<MainScreen> {
             eachDriver.locationLatitude!, eachDriver.locationLongitude!);
 
         Marker marker = Marker(
-          markerId: MarkerId(eachDriver.driverId!),
+          markerId: MarkerId("driver" + eachDriver.driverId!),
           position: eachDriverActivePosition,
           icon: activeNearbyIcon!,
           rotation: 360,
@@ -897,13 +901,17 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   createActiveNearbydriverIconMarker() {
-    ImageConfiguration imageConfiguration = createLocalImageConfiguration(
-        context, size: const Size(2, 2));
-    BitmapDescriptor.fromAssetImage(imageConfiguration, "images/marker.png")
-        .then((value) {
-      activeNearbyIcon = value;
-    }
-    );
+
+   if(activeNearbyIcon == null)
+     {
+
+       ImageConfiguration imageConfiguration = createLocalImageConfiguration(
+           context, size: const Size(2, 2));
+       BitmapDescriptor.fromAssetImage(imageConfiguration, "images/marker.png")
+           .then((value) {
+         activeNearbyIcon = value;
+       });
+     }
   }
 
 

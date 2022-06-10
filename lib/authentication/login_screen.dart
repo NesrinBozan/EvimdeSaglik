@@ -7,6 +7,7 @@ import 'package:users_app/authentication/signup_screen.dart';
 import 'package:users_app/global/global.dart';
 import 'package:users_app/mainScreens/main_screen.dart';
 import 'package:users_app/models/home_page_state.dart';
+import 'package:users_app/screens/home_screen.dart';
 import 'package:users_app/screens/splash_screen.dart';
 import 'package:users_app/widgets/progress_dialog.dart';
 
@@ -62,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
         {
           currentFirebaseUser = firebaseUser;
           Fluttertoast.showToast(msg: "Giriş Başarılı.");
-          Navigator.push(context, MaterialPageRoute(builder: (c)=> MainScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
    // Home_Page_Screen
         }
         else

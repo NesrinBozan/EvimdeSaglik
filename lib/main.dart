@@ -12,6 +12,7 @@ import 'package:users_app/screens/profile_screen.dart';
 import 'package:users_app/screens/splash_screen.dart';
 import 'package:users_app/screens/checkUp_detail.dart';
 import 'package:users_app/screens/branch_screen.dart';
+import 'package:users_app/widgets/end_of_ride_dialog.dart';
 
 
 
@@ -31,9 +32,10 @@ void main() async {
              home:
              //MainScreen(),
              //LoginScreen(),
-             //   MySplashScreen(), //
+               MySplashScreen(), //
            // HomePageState(),
-             DetailScreen(),
+            // DetailScreen(),
+
              debugShowCheckedModeBanner: false,
            ),
          )
