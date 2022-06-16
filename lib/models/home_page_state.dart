@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:users_app/mainScreens/main_screen.dart';
 import 'package:users_app/screens/home_screen.dart';
+import 'package:users_app/screens/mapScreen.dart';
 import 'package:users_app/screens/profile_screen.dart';
 
 
@@ -15,7 +16,7 @@ class _HomePageStateState extends State<HomePageState> {
   int index=0;
   final screens =[
     HomeScreen(),
-    MainScreen(),
+    MapScreen(),
     ProfileScreen(),
   ];
   @override

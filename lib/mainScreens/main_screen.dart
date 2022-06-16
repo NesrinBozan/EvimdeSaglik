@@ -260,6 +260,7 @@ class _MainScreenState extends State<MainScreen> {
         .searchAddressForGeographicCoOrdinates(userCurrentPosition!, context);
 
     print("this is your address" + humanReadableAddress);
+    initializeGeoFireListener();
   }
 
   @override

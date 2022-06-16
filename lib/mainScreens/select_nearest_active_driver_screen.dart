@@ -26,7 +26,7 @@ class SelectNearestActiveDriverScreen extends StatefulWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurpleAccent[200],
         title: Text(
-            "En Yakın Çevrimiçi Sürücü",
+            "En Yakın Çevrimiçi Sağlık Aracı",
           style: TextStyle(
           fontSize: 18,
         ),),
@@ -56,15 +56,15 @@ class SelectNearestActiveDriverScreen extends StatefulWidget {
            Navigator.pop(context,"driverChoosed");
            },
             child: Card(
-              color: Colors.grey,
+              color: Colors.pink[50],
               elevation: 3,
               shadowColor: Colors.amberAccent,
               margin: EdgeInsets.all(8),
               child: ListTile(
-                leading: Padding(padding: const EdgeInsets.only(top: 8.0),
+                leading: Padding(padding: const EdgeInsets.only(top: 12.0),
                 child: Image.asset(
-                    "images/" + dList[index]["car_details"]["type"].toString() + "ml_prescription2.png" + "ml_prescription3.png" + "ml_prescription4.png",
-                width: 70,
+                    "images/" + dList[index]["car_details"]["type"].toString() + "redAmbulance.jpeg" + "greenAmbulance.jpeg" + "blueAmbulance.jpeg",
+                width: 60,
                 ),
                 ) ,
                 title: Column(
@@ -95,7 +95,7 @@ class SelectNearestActiveDriverScreen extends StatefulWidget {
                   ],
                 ),
 
-                trailing: Column(
+                /*trailing: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
@@ -106,7 +106,7 @@ class SelectNearestActiveDriverScreen extends StatefulWidget {
                     ),
                     const SizedBox(height: 2,)
                   ],
-                ),
+                ),*/
               ),
             ),
           );

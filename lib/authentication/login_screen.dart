@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
         {
           currentFirebaseUser = firebaseUser;
           Fluttertoast.showToast(msg: "Giriş Başarılı.");
-          Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (c)=> HomePageState()));
    // Home_Page_Screen
         }
         else
