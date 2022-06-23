@@ -13,3 +13,11 @@ Uygulama temelde iki tür kullanıcı için ayrı ayrı gerçekleştirilecektir.
 [![image](https://r.resimlink.com/WDVYRciO2Xf.png)](https://resimlink.com/WDVYRciO2Xf)
 
 [![image](https://r.resimlink.com/Ivx7l_gaH.png)](https://resimlink.com/Ivx7l_gaH)
+
+
+https://user-images.githubusercontent.com/79088568/175278182-3695c8a0-6e94-4ad8-a1df-86542ced5d6e.mov
+
+
+
+https://user-images.githubusercontent.com/79088568/175278216-775cab84-b517-4503-8654-139fadf9d886.mov
+
